@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('university.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            color: red;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: darkred;
+        }
+        .error {
+            color: red;
+            font-size: 0.8em;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+        .forgot-password {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .forgot-password a {
+            color: red;
+            text-decoration: none;
+        }
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+                footer {
+            background-color: rgba(94, 92, 92, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body> 
+    <div class="form-container">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm" action="#" method="post" onsubmit="return validarLogin()">
+            <label for="emailLogin">Email:</label>
+            <input type="email" id="emailLogin" name="emailLogin" required>
+            <span id="errorEmailLogin" class="error"></span>
+            
+            <label for="passwordLogin">Contraseña:</label>
+            <input type="password" id="passwordLogin" name="passwordLogin" required>
+            <span id="errorPasswordLogin" class="error"></span>
+            
+            <input type="submit" value="Iniciar Sesión"  >
+        </form>
+        <div class="forgot-password">
+            <a href="recuperar_contraseña.html">¿Olvidaste tu contraseña?</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>ULEAM © Copyright 2020, Todos los derechos reservados - Universidad Laica Eloy Alfaro de Manabí <br>
+            Dirección: Av. Circunvalación - Vía a San Mateo <br>
+            Manta - Manabí - Ecuador</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residencia Universitaria ULEAM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('university.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: rgba(255, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .box {
+            text-align: center;
+        }
+        .box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .box h3 {
+            color: red;
+            margin: 10px 0;
+        }
+        .box p {
+            color: gray;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-container a {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+            display: inline-block;
+        }
+        .button-container a:hover {
+            background-color: darkred;
+        }
+        footer {
+            background-color: rgba(94, 92, 92, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Residencia Universitaria ULEAM
+</header>
+
+<div class="container">
+    <div class="box">
+        <img src="habitacion1.jfif" alt="Habitación Individual">
+        <h3>Habitación Individual</h3>
+        <p>Descripción de la habitación individual, equipada con una cama, escritorio y armario.</p>
+    </div>
+    <div class="box">
+        <img src="habitacion2.jfif" alt="Habitación Doble">
+        <h3>Habitación Doble</h3>
+        <p>Descripción de la habitación doble, ideal para compartir, con dos camas y espacio de almacenamiento.</p>
+    </div>
+    <div class="box">
+        <img src="habitacion3.jfif" alt="Habitación Suite">
+        <h3>Habitación Suite</h3>
+        <p>Descripción de la habitación suite, con sala de estar y comodidades adicionales.</p>
+    </div>
+    <div class="box">
+        <img src="habitacion4.jfif" alt="Habitación Estudio">
+        <h3>Habitación Estudio</h3>
+        <p>Descripción de la habitación estudio, con un área de trabajo amplia y espacio personal.</p>
+    </div>
+</div>
+
+<div class="button-container">
+    <a href="Solicitud.html">Solicitar Habitación</a>
+</div>
+
+<footer>
+    <p>ULEAM © Copyright 2020, Todos los derechos reservados - Universidad Laica Eloy Alfaro de Manabí <br>
+        Dirección: Av. Circunvalación - Vía a San Mateo <br>
+        Manta - Manabí - Ecuador</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

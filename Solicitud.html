@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Solicitud de Residencia Universitaria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('university.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: rgba(255, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            color: red;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: darkred;
+        }
+        .error {
+            color: red;
+            font-size: 0.8em;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        Formulario de Solicitud de Residencia Universitaria
+    </header>
+
+    <div class="container">
+        <h2>Formulario de Solicitud de Residencia Universitaria</h2>
+        <form action="#" method="post" onsubmit="return validarFormulario()">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <span id="errorNombre" class="error"></span>
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <span id="errorApellido" class="error"></span>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <span id="errorDireccion" class="error"></span>
+            
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+            <span id="errorCiudad" class="error"></span>
+            
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required>
+            <span id="errorPais" class="error"></span>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="errorEmail" class="error"></span>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <span id="errorTelefono" class="error"></span>
+            
+            <label for="facultad">Facultad:</label>
+            <input type="text" id="facultad" name="facultad" required>
+            <span id="errorFacultad" class="error"></span>
+            
+            <label for="carrera">Carrera:</label>
+            <input type="text" id="carrera" name="carrera" required>
+            <span id="errorCarrera" class="error"></span>
+            
+            <label for="solicitud_anio">Solicitud para el año:</label>
+            <input type="text" id="solicitud_anio" name="solicitud_anio" required>
+            <span id="errorSolicitudAnio" class="error"></span>
+            
+            <label for="tipo_habitacion">Tipo de habitación:</label>
+            <select id="tipo_habitacion" name="tipo_habitacion" required>
+                <option value="">Seleccione...</option>
+                <option value="Individual">Individual</option>
+                <option value="Compartida">Compartida</option>
+            </select>
+            <span id="errorTipoHabitacion" class="error"></span>
+            
+            <input type="submit" value="Enviar Solicitud">
+        </form>
+    </div>
+
+</body>
+</html>
